@@ -1,5 +1,12 @@
 <script lang="ts">
   import { cartCount } from '$lib/stores/cart';
+  import { user, isAuthenticated, logout } from '$lib/stores/auth';
+  import { goto } from '$app/navigation';
+
+  async function handleLogout() {
+    logout();
+    goto('/');
+  }
 </script>
 
 <header>
@@ -7,12 +14,20 @@
     <a href="/" class="logo">Learnify</a>
     <div class="nav-links">
       <a href="/courses">Browse</a>
-      <a href="/teach">Teach on Learnify</a>
+      {#if $user?.role === 'instructor'}
+        <a href="/teach">Teach on Learnify</a>
+      {/if}
     </div>
     <div class="nav-actions">
       <a href="/cart" class="cart">🛒 {$cartCount}</a>
-      <a href="/login" class="btn-outline">Log in</a>
-      <a href="/signup" class="btn-fill">Sign up</a>
+      {#if $isAuthenticated}
+        <span class="user-name">{$user?.fullName}</span>
+        <a href="/profile" class="btn-outline">Profile</a>
+        <button on:click={handleLogout} class="btn-fill">Log out</button>
+      {:else}
+        <a href="/login" class="btn-outline">Log in</a>
+        <a href="/signup" class="btn-fill">Sign up</a>
+      {/if}
     </div>
   </nav>
 </header>
@@ -70,6 +85,12 @@
     text-decoration: none;
   }
 
+  .user-name {
+    font-size: 0.9rem;
+    color: #1c1d1f;
+    font-weight: 600;
+  }
+
   .btn-outline {
     padding: 0.4rem 0.75rem;
     border: 1px solid #1c1d1f;
@@ -86,5 +107,8 @@
     border-radius: 4px;
     text-decoration: none;
     font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
   }
 </style>
