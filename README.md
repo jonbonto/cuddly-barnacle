@@ -91,3 +91,63 @@ Migrations live in `backend/migrations/`. The initial migration creates:
 - `users` — platform users (learners & instructors)
 - `courses` — course catalogue
 - `enrollments` — user ↔ course relationship
+
+## Issues
+
+````yaml type="issue-tree"
+data:
+- tag: 'jonbonto/cuddly-barnacle#4'
+  title: 'Course progress tracking and completion certificates'
+  repository: 'jonbonto/cuddly-barnacle'
+  number: 4
+  state: 'open'
+  url: 'https://github.com/jonbonto/cuddly-barnacle/issues/4'
+- tag: 'jonbonto/cuddly-barnacle#5'
+  title: 'Implement shopping cart and course purchase flow'
+  repository: 'jonbonto/cuddly-barnacle'
+  number: 5
+  state: 'open'
+  url: 'https://github.com/jonbonto/cuddly-barnacle/issues/5'
+- tag: 'jonbonto/cuddly-barnacle#6'
+  title: 'Implement video upload and playback'
+  repository: 'jonbonto/cuddly-barnacle'
+  number: 6
+  state: 'open'
+  url: 'https://github.com/jonbonto/cuddly-barnacle/issues/6'
+- tag: 'jonbonto/cuddly-barnacle#7'
+  title: 'Implement user authentication and authorization (backend and frontend)'
+  repository: 'jonbonto/cuddly-barnacle'
+  number: 7
+  state: 'open'
+  url: 'https://github.com/jonbonto/cuddly-barnacle/issues/7'
+- tag: 'jonbonto/cuddly-barnacle#8'
+  title: 'Course creation and management (CRUD, publish, instructor UI)'
+  repository: 'jonbonto/cuddly-barnacle'
+  number: 8
+  state: 'open'
+  url: 'https://github.com/jonbonto/cuddly-barnacle/issues/8'
+- tag: 'jonbonto/cuddly-barnacle#9'
+  title: 'Reviews, ratings, search, and filtering'
+  repository: 'jonbonto/cuddly-barnacle'
+  number: 9
+  state: 'open'
+  url: 'https://github.com/jonbonto/cuddly-barnacle/issues/9'
+- tag: 'jonbonto/cuddly-barnacle#10'
+  title: 'Course progress tracking and completion certificates'
+  repository: 'jonbonto/cuddly-barnacle'
+  number: 10
+  state: 'open'
+  url: 'https://github.com/jonbonto/cuddly-barnacle/issues/10'
+- tag: 'jonbonto/cuddly-barnacle#11'
+  title: 'Instructor dashboard: stats and analytics'
+  repository: 'jonbonto/cuddly-barnacle'
+  number: 11
+  state: 'open'
+  url: 'https://github.com/jonbonto/cuddly-barnacle/issues/11'
+- tag: 'jonbonto/cuddly-barnacle#12'
+  title: 'Responsive UI & Udemy-like design theme'
+  repository: 'jonbonto/cuddly-barnacle'
+  number: 12
+  state: 'open'
+  url: 'https://github.com/jonbonto/cuddly-barnacle/issues/12'
+````
