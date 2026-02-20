@@ -94,7 +94,9 @@ Migrations live in `backend/migrations/`. The initial migration creates:
 
 ## Issues
 
-````yaml type="issue-tree"
+> Note: The list below is a static snapshot of selected open issues and may become outdated. For the latest list, see the live GitHub Issues page: https://github.com/jonbonto/cuddly-barnacle/issues
+
+```yaml type="issue-tree"
 data:
 - tag: 'jonbonto/cuddly-barnacle#4'
   title: 'Course progress tracking and completion certificates'
@@ -150,4 +152,4 @@ data:
   number: 12
   state: 'open'
   url: 'https://github.com/jonbonto/cuddly-barnacle/issues/12'
-````
+```
